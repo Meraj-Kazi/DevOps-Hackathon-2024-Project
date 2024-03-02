@@ -23,7 +23,7 @@ class Post(Base):
     post_data = Column(String)
 
 # MySQL Database Configuration
-DATABASE_URL = "mysql+mysqlconnector://root:12341234@localhost/hackathon"
+DATABASE_URL = "mysql+mysqlconnector://root:password1234@localhost/hackathon"
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
@@ -41,7 +41,7 @@ FastAPIInstrumentor.instrument_app(app)
 handler = logging_loki.LokiHandler(
     url="http://localhost:3000/loki/api/v1/push", 
     tags={"application": "my-app"},
-    auth=("admin", "12341234"),
+    auth=("admin", "password1234"),
     version="1",
 )
 
