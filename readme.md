@@ -16,6 +16,12 @@
 	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png" alt="Visual Studio Code" title="Visual Studio Code"/></code>
 </div>
 
+<br>
+
+We used opentelemtry tools such as Jaeger tracing, grafana, loki etc. to trace and monitor api services. Our main goal was to create a scalable monitoring and tracing service that works perfectly with the backend services.
+
+For the api services, we used python and fastAPI and MySQL database.
+
 ### Team Details 
 Team name: Susanoo
 Team members: 
